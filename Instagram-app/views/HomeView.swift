@@ -13,13 +13,13 @@ struct HomeView: View {
             Header()
             
             ScrollView(.vertical, showsIndicators: false) {
-                Stories()
+                StoriesView()
                 
                 Divider()
                 
-                Post()
-                
-                Post(image: "dog", description: "Almost 2 years old")
+                ForEach(postData) { post in
+                    PostView(post: post)
+                }
             }
             
         }

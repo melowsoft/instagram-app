@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct PostHeader: View {
+    var username: String = "melowsoft"
+    var image: String = "profile"
+    
     var body: some View {
         HStack {
             HStack {
-                Image("profile")
+                Image(image)
                     .resizable()
                     .frame(width: 30, height: 30)
                     .cornerRadius(50)
                 
-                Text("melowsoft")
+                Text(username)
                     .font(.caption)
                     .fontWeight(.bold)
             }

@@ -12,13 +12,15 @@
 		EA770058278998150044E0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA770057278998150044E0CD /* Assets.xcassets */; };
 		EA77005B278998150044E0CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77005A278998150044E0CD /* Preview Assets.xcassets */; };
 		EA7700632789B8140044E0CD /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7700622789B8140044E0CD /* Header.swift */; };
-		EA7700662789BDE60044E0CD /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7700652789BDE60044E0CD /* Story.swift */; };
+		EA7700662789BDE60044E0CD /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7700652789BDE60044E0CD /* StoryView.swift */; };
 		EA77006C2789BE460044E0CD /* PostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77006B2789BE460044E0CD /* PostHeader.swift */; };
-		EA77006E2789BE610044E0CD /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77006D2789BE610044E0CD /* Stories.swift */; };
-		EA7700702789BE860044E0CD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77006F2789BE860044E0CD /* Post.swift */; };
+		EA77006E2789BE610044E0CD /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77006D2789BE610044E0CD /* StoriesView.swift */; };
+		EA7700702789BE860044E0CD /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77006F2789BE860044E0CD /* PostView.swift */; };
 		EA7700722789BEBA0044E0CD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7700712789BEBA0044E0CD /* TabBar.swift */; };
 		EA7700742789BFD20044E0CD /* PostContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7700732789BFD20044E0CD /* PostContent.swift */; };
 		EA7700772789C04F0044E0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7700762789C04F0044E0CD /* HomeView.swift */; };
+		EA94DB4F278ADC9E0057542E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94DB4E278ADC9E0057542E /* Story.swift */; };
+		EA94DB51278AE0E70057542E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94DB50278AE0E70057542E /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +30,15 @@
 		EA770057278998150044E0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA77005A278998150044E0CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA7700622789B8140044E0CD /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		EA7700652789BDE60044E0CD /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		EA7700652789BDE60044E0CD /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		EA77006B2789BE460044E0CD /* PostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeader.swift; sourceTree = "<group>"; };
-		EA77006D2789BE610044E0CD /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
-		EA77006F2789BE860044E0CD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EA77006D2789BE610044E0CD /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		EA77006F2789BE860044E0CD /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		EA7700712789BEBA0044E0CD /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		EA7700732789BFD20044E0CD /* PostContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContent.swift; sourceTree = "<group>"; };
 		EA7700762789C04F0044E0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EA94DB4E278ADC9E0057542E /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		EA94DB50278AE0E70057542E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		EA770052278998130044E0CD /* Instagram-app */ = {
 			isa = PBXGroup;
 			children = (
+				EA94DB4D278ADC810057542E /* model */,
 				EA7700752789C0210044E0CD /* views */,
 				EA7700612789B7F30044E0CD /* components */,
 				EA770053278998130044E0CD /* Instagram_appApp.swift */,
@@ -89,10 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				EA7700622789B8140044E0CD /* Header.swift */,
-				EA7700652789BDE60044E0CD /* Story.swift */,
+				EA7700652789BDE60044E0CD /* StoryView.swift */,
 				EA77006B2789BE460044E0CD /* PostHeader.swift */,
-				EA77006D2789BE610044E0CD /* Stories.swift */,
-				EA77006F2789BE860044E0CD /* Post.swift */,
+				EA77006D2789BE610044E0CD /* StoriesView.swift */,
+				EA77006F2789BE860044E0CD /* PostView.swift */,
 				EA7700712789BEBA0044E0CD /* TabBar.swift */,
 				EA7700732789BFD20044E0CD /* PostContent.swift */,
 			);
@@ -105,6 +110,15 @@
 				EA7700762789C04F0044E0CD /* HomeView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		EA94DB4D278ADC810057542E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EA94DB4E278ADC9E0057542E /* Story.swift */,
+				EA94DB50278AE0E70057542E /* Post.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,13 +194,15 @@
 				EA770056278998130044E0CD /* ContentView.swift in Sources */,
 				EA7700632789B8140044E0CD /* Header.swift in Sources */,
 				EA770054278998130044E0CD /* Instagram_appApp.swift in Sources */,
+				EA94DB51278AE0E70057542E /* Post.swift in Sources */,
 				EA7700772789C04F0044E0CD /* HomeView.swift in Sources */,
 				EA7700722789BEBA0044E0CD /* TabBar.swift in Sources */,
-				EA77006E2789BE610044E0CD /* Stories.swift in Sources */,
-				EA7700662789BDE60044E0CD /* Story.swift in Sources */,
+				EA77006E2789BE610044E0CD /* StoriesView.swift in Sources */,
+				EA7700662789BDE60044E0CD /* StoryView.swift in Sources */,
 				EA7700742789BFD20044E0CD /* PostContent.swift in Sources */,
-				EA7700702789BE860044E0CD /* Post.swift in Sources */,
+				EA7700702789BE860044E0CD /* PostView.swift in Sources */,
 				EA77006C2789BE460044E0CD /* PostHeader.swift in Sources */,
+				EA94DB4F278ADC9E0057542E /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

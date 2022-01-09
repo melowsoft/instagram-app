@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PostContent: View {
-    var image: String = "profile"
+    var images: [String] = ["profile"]
     
     var body: some View {
         VStack(spacing: 0) {
-            Image(image)
+            Image(images[0])
                 .resizable()
                 .frame(width: .infinity)
                 .aspectRatio(contentMode: .fit)

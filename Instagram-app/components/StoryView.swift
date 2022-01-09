@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct Story: View {
-    var image: String = "profile"
-    var name: String = "williey yam"
+struct StoryView: View {
+    var story: Story = storiesData[0]
     
     var body: some View {
         VStack {
             VStack {
-                Image(image)
+                Image(story.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 60, height: 60)
@@ -28,7 +27,7 @@ struct Story: View {
             )
             .frame(width: 70, height: 70)
             
-            Text(name)
+            Text(story.username)
                 .font(.caption)
         }
     }
@@ -36,6 +35,6 @@ struct Story: View {
 
 struct Story_Previews: PreviewProvider {
     static var previews: some View {
-        Story()
+        StoryView()
     }
 }
