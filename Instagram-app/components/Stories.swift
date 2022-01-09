@@ -12,14 +12,15 @@ struct Stories: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 15.0) {
-                Story()
-                Story(image: "profile2", name: "Meng To")
-                Story(image: "profile3", name: "Akson")
-                Story(image: "profile4", name: "Steph")
-                Story(image: "profile5", name: "Sam")
-                Story(image: "profile6", name: "Dara")
-                Story(image: "profile7", name: "Sourany")
-                Story(image: "profile8", name: "pom")
+                Story(image: "profile", name: "Your story")
+                Story(image: "profile2", name: "doubrabrisibe")
+                Story(image: "profile3", name: "Slosh.ng")
+                Story(image: "profile4", name: "a.b.i.s.o.y.e")
+                Story(image: "profile5", name: "archi_mella")
+                Story(image: "profile6", name: "tosinmusic")
+                Story(image: "profile7", name: "naomicrystal1")
+                Story(image: "profile8", name: "khaffylat")
+                Story(image: "profile9", name: "timothyomada")
             }
             .padding(.horizontal, 8)
         }

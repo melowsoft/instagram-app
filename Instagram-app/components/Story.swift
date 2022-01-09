@@ -16,6 +16,7 @@ struct Story: View {
             VStack {
                 Image(image)
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 60, height: 60)
                     .cornerRadius(50)
                 

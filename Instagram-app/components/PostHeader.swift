@@ -16,7 +16,7 @@ struct PostHeader: View {
                     .frame(width: 30, height: 30)
                     .cornerRadius(50)
                 
-                Text("Willie Yam")
+                Text("melowsoft")
                     .font(.caption)
                     .fontWeight(.bold)
             }
